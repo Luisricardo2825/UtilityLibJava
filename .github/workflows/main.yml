@@ -19,6 +19,8 @@ jobs:
 
       - name: Execute Gradle build
         run: chmod +x ./gradlew build && cd build && cd libs && ls
+      - name: List files
+        run: cd build && cd libs && ls
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
