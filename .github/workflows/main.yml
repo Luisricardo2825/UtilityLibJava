@@ -4,7 +4,7 @@ on:
 jobs:
   pre-release:
     name: "Pre Release"
-    runs-on: "windows-latest"
+    runs-on: "ubutun-latest"
 
     steps:
       # ...
