@@ -1,6 +1,6 @@
 name: Run Gradle on PRs
 on: 
-  push: "master"
+  push: 
 jobs:
   gradle:
     strategy:
