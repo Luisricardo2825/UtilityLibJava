@@ -18,7 +18,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Execute Gradle build
-        run: chmod +x ./gradlew build && cd build && cd libs && ls
+        run: chmod +x ./gradlew build 
       - name: List files
         run: cd build && cd libs && ls
 
