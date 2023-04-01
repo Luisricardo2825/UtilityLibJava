@@ -24,4 +24,4 @@ jobs:
         prerelease: false
         files: |
             LICENSE.txt
-            ./UtilityLibJava/build/libs/*.jar
+            ./build/libs/*.jar
