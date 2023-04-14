@@ -21,8 +21,6 @@ jobs:
         run: mkdir build
       - name: Execute Gradle build
         run: chmod +x ./gradlew build 
-      - name: List files
-        run: cd build && cd libs && ls
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
