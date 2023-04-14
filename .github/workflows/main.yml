@@ -31,4 +31,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            "./build/libs/UtilityLibGradle-1.1.jar"
+            "./build/libs/*.jar"
