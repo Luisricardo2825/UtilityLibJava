@@ -23,5 +23,5 @@ jobs:
     steps:
     - uses: actions/upload-artifact@v3
       with:
-        name: Package
-        path: ./build/libs/*.jar    
+       name: UtilityLib
+       path: build/libs/
