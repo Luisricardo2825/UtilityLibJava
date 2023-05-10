@@ -16,7 +16,12 @@ jobs:
       uses: gradle/wrapper-validation-action@ccb4328a959376b642e027874838f60f8e596de3
     - name: Build with Gradle
       run: chmod +x ./gradlew
+
+  release:
+    needs: build
+    runs-on: "ubuntun-latest"
+    steps:
     - uses: actions/upload-artifact@v3
       with:
         name: Package
-        path: ./build/libs/*.jar
+        path: ./build/libs/*.jar    
