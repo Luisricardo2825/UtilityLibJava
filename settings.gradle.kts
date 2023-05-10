@@ -1,2 +1,2 @@
-rootProject.name = "UtilityLibGradle"
+rootProject.name = "UtilityLibJava"
 include("src")
