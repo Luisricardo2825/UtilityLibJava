@@ -19,7 +19,7 @@ jobs:
 
   release:
     needs: build
-    runs-on: "ubuntun-latest"
+    runs-on: "ubuntu-latest"
     steps:
     - uses: actions/upload-artifact@v3
       with:
