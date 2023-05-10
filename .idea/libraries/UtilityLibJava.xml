@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="UtilityLibJava">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../tauri/dbknowerX/src-tauri/lib/UtilityLibJava.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../tauri/dbknowerX/src-tauri/lib/UtilityLibJava.jar!/" />
+    </SOURCES>
+  </library>
+</component>
