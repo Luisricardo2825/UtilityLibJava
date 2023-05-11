@@ -66,6 +66,8 @@ public class BtnRunQuery implements AcaoRotinaJava {
         JsonArray results = new JsonArray();
         int total_cols = rset.getMetaData().getColumnCount();
         int rowsUpdated = 0;
+
+
         while (rset.next()) {
             rowsUpdated++;
             JsonObject colJson = new JsonObject();
