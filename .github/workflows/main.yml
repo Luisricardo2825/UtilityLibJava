@@ -7,17 +7,14 @@ jobs:
     runs-on: "ubuntu-latest"
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
-        with:
-            java-version: '8'
-            distribution: 'temurin'
-      - name: Build with gradlew
-      - uses: gradle/gradle-build-action@v2
-        with:
-          arguments: assemble
-      - name: List Files
-        run: ls
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'temurin'
+    - name: Build with Gradle
+      run: ./gradlew assemble
+
   release:
    runs-on: "ubuntu-latest"
    name: "Release"
