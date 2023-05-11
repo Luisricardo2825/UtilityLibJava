@@ -24,10 +24,11 @@ jobs:
    
    steps:
     - name: Upload binaries to release
-      uses: svenstaro/upload-release-action@v2
+      uses: marvinpinto/action-automatic-releases@v1.2.1
       with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: build/libs/*
-        asset_name: mything
-        tag: ${{ github.ref }}
-        overwrite: true
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: false
+          title: "Development Build"
+          files: |
+             /build/libs/*.jar
